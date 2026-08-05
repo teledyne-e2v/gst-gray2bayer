@@ -21,7 +21,7 @@ The following libraries are required for this plugin:
 ### Debian based system (Jetson): 
 
 ```
-sudo apt install v4l-utils libv4l-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev meson gstreamer1.0-plugins-bad
+sudo apt install v4l-utils libv4l-dev libgstreamer1.0-dev libgstreamer-plugins-base1.0-dev meson gstreamer1.0-plugins-bad libgsl-dev
 ```
 
 ### Yocto based system (IMX): 
