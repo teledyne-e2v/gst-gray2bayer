@@ -99,4 +99,7 @@ gst-launch-1.0 v4l2src ! 'video/x-raw,width=1920,height=1080,format=GRAY8' ! cap
 gst-launch-1.0 v4l2src ! 'video/x-raw,width=1920,height=1080,format=GRAY8' ! capssetter join=false caps="video/x-bayer,format=rggb"  ! bayer2rgb ! nvvidconv ! 'video/x-raw(memory:NVMM)' ! nv3dsink sync=0
 ```
 
-
+### Example with Jetson Orin Nano:
+```
+gst-launch-1.0 v4l2src ! 'video/x-raw,format=GRAY8,width=1920,height=1080' ! capssetter join=false caps="video/x-bayer,format=rggb" ! bayer2rgb ! videoconvert ! autovideosink
+```
